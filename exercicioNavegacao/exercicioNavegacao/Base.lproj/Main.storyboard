@@ -21,7 +21,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="5nC-Fo-wGf" kind="show" id="Q1D-pu-sxe"/>
+                                    <action selector="tappedScreen2Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KI5-vC-EOH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -34,6 +34,9 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mdr-8v-oIB" secondAttribute="trailing" constant="157" id="zhA-I9-gMs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="5nC-Fo-wGf" kind="show" identifier="GoToScreen2" id="YW6-93-Nll"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
