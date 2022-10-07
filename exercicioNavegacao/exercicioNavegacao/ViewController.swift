@@ -14,8 +14,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func tappedGoToTela02(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToTela02", sender: nil)
+
+    @IBAction func tappedModalButton(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Tela02VC", bundle: nil).instantiateViewController(withIdentifier: "Tela02VC") as? Tela02VC
+        present(vc ?? UIViewController(), animated: true)
     }
+    
+    @IBAction func tappedNavigationButton(_ sender: UIButton) {
+        let vc = UIStoryboard(name: "Tela02VC", bundle: nil).instantiateViewController(withIdentifier: "Tela02VC") as? Tela02VC
+        navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
+    }
+    
 }
 
