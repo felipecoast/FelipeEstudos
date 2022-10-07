@@ -13,6 +13,8 @@
 		201F814B28EF8F320054FD1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201F814928EF8F320054FD1A /* Main.storyboard */; };
 		201F814D28EF8F340054FD1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201F814C28EF8F340054FD1A /* Assets.xcassets */; };
 		201F815028EF8F340054FD1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201F814E28EF8F340054FD1A /* LaunchScreen.storyboard */; };
+		201F815828EFAC040054FD1A /* Tela02VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201F815728EFAC040054FD1A /* Tela02VC.swift */; };
+		201F815A28EFAC170054FD1A /* Tela02VC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201F815928EFAC170054FD1A /* Tela02VC.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		201F814C28EF8F340054FD1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		201F814F28EF8F340054FD1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		201F815128EF8F340054FD1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201F815728EFAC040054FD1A /* Tela02VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tela02VC.swift; sourceTree = "<group>"; };
+		201F815928EFAC170054FD1A /* Tela02VC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tela02VC.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 		201F813728EF8F320054FD1A = {
 			isa = PBXGroup;
 			children = (
+				201F815B28EFAC330054FD1A /* Tela02 */,
 				201F814228EF8F320054FD1A /* exercicioNavegacao */,
 				201F814128EF8F320054FD1A /* Products */,
 			);
@@ -65,6 +70,15 @@
 				201F815128EF8F340054FD1A /* Info.plist */,
 			);
 			path = exercicioNavegacao;
+			sourceTree = "<group>";
+		};
+		201F815B28EFAC330054FD1A /* Tela02 */ = {
+			isa = PBXGroup;
+			children = (
+				201F815728EFAC040054FD1A /* Tela02VC.swift */,
+				201F815928EFAC170054FD1A /* Tela02VC.storyboard */,
+			);
+			path = Tela02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 				201F815028EF8F340054FD1A /* LaunchScreen.storyboard in Resources */,
 				201F814D28EF8F340054FD1A /* Assets.xcassets in Resources */,
 				201F814B28EF8F320054FD1A /* Main.storyboard in Resources */,
+				201F815A28EFAC170054FD1A /* Tela02VC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +155,7 @@
 			files = (
 				201F814828EF8F320054FD1A /* ViewController.swift in Sources */,
 				201F814428EF8F320054FD1A /* AppDelegate.swift in Sources */,
+				201F815828EFAC040054FD1A /* Tela02VC.swift in Sources */,
 				201F814628EF8F320054FD1A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
