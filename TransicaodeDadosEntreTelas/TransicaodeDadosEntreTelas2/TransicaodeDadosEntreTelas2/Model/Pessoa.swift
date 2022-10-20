@@ -10,6 +10,6 @@ import Foundation
 struct Pessoa {
     var name: String
     var lastName: String
-    var age: Int
+    var age: String
     var position: String
 }
