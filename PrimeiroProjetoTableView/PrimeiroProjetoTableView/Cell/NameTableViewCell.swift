@@ -32,6 +32,9 @@ class NameTableViewCell: UITableViewCell {
         // Initialization code
     }
     
+    //(brand: Brand)
+    //nameLabel.text = brand.name
+    //imageView.image = brand.image
     func setupCell(name: String) {
         nameLabel.text = name
     }
