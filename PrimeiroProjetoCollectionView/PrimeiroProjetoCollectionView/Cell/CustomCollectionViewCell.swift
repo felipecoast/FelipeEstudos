@@ -21,6 +21,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
     //ciclo de vida da cell, podendo comparar com o viewDidLoad da ViewController
     override func awakeFromNib() {
         super.awakeFromNib()
+        //coloca todas as imagens na mesma proporção
+        carImageView.contentMode = .scaleAspectFill
         // Initialization code
     }
     
