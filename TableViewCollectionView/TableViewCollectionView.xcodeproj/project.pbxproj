@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		205E7286291B154F00891F7F /* CarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E7284291B154F00891F7F /* CarCollectionViewCell.swift */; };
+		205E7287291B154F00891F7F /* CarCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 205E7285291B154F00891F7F /* CarCollectionViewCell.xib */; };
 		205FABAC2919E5650097FE7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FABAB2919E5650097FE7C /* AppDelegate.swift */; };
 		205FABAE2919E5650097FE7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FABAD2919E5650097FE7C /* SceneDelegate.swift */; };
 		205FABB02919E5650097FE7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205FABAF2919E5650097FE7C /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		205E7284291B154F00891F7F /* CarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCollectionViewCell.swift; sourceTree = "<group>"; };
+		205E7285291B154F00891F7F /* CarCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarCollectionViewCell.xib; sourceTree = "<group>"; };
 		205FABA82919E5650097FE7C /* TableViewCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		205FABAB2919E5650097FE7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		205FABAD2919E5650097FE7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		205E7283291B152B00891F7F /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				205E7284291B154F00891F7F /* CarCollectionViewCell.swift */,
+				205E7285291B154F00891F7F /* CarCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
 		205FAB9F2919E5650097FE7C = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +73,7 @@
 		205FABAA2919E5650097FE7C /* TableViewCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				205E7283291B152B00891F7F /* CollectionViewCell */,
 				205FABBF2919E7070097FE7C /* TableViewCell */,
 				205FABAB2919E5650097FE7C /* AppDelegate.swift */,
 				205FABAD2919E5650097FE7C /* SceneDelegate.swift */,
@@ -143,6 +157,7 @@
 				205FABB52919E5660097FE7C /* Assets.xcassets in Resources */,
 				205FABC32919E7490097FE7C /* CarTableViewCell.xib in Resources */,
 				205FABB32919E5650097FE7C /* Main.storyboard in Resources */,
+				205E7287291B154F00891F7F /* CarCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				205FABB02919E5650097FE7C /* ViewController.swift in Sources */,
+				205E7286291B154F00891F7F /* CarCollectionViewCell.swift in Sources */,
 				205FABAC2919E5650097FE7C /* AppDelegate.swift in Sources */,
 				205FABC22919E7490097FE7C /* CarTableViewCell.swift in Sources */,
 				205FABAE2919E5650097FE7C /* SceneDelegate.swift in Sources */,
