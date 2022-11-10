@@ -19,7 +19,7 @@ class PokeCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        pokeImageView.contentMode = .scaleAspectFill
+        pokeImageView.contentMode = .scaleAspectFit
         // Initialization code
     }
 
