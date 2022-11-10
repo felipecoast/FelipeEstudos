@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         configTableView()
         // Do any additional setup after loading the view.
     }
-
+    
     func configTableView() {
         tableView.delegate = self
         tableView.dataSource = self
@@ -48,7 +48,7 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 280
+        return 364
     }
     
 }
