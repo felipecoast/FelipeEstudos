@@ -65,8 +65,8 @@
                                     <action selector="addButton:" destination="fDL-gO-T9W" eventType="touchUpInside" id="QO4-4a-C9R"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Tif-m1-O02">
-                                <rect key="frame" x="0.0" y="448" width="390" height="313"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bjk-ZT-iDX">
+                                <rect key="frame" x="0.0" y="445" width="390" height="306"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -75,19 +75,19 @@
                         <constraints>
                             <constraint firstItem="1Yb-gv-tTd" firstAttribute="top" secondItem="fQP-da-IvG" secondAttribute="top" id="0CG-tF-7dq"/>
                             <constraint firstItem="05L-KG-Z0f" firstAttribute="leading" secondItem="fQP-da-IvG" secondAttribute="leading" constant="20" id="2IY-qD-uHU"/>
-                            <constraint firstItem="Tif-m1-O02" firstAttribute="leading" secondItem="fQP-da-IvG" secondAttribute="leading" id="DH0-nn-TP1"/>
+                            <constraint firstItem="Bjk-ZT-iDX" firstAttribute="leading" secondItem="fQP-da-IvG" secondAttribute="leading" id="DXg-Ec-h6Y"/>
                             <constraint firstItem="fQP-da-IvG" firstAttribute="trailing" secondItem="qNl-g5-BTD" secondAttribute="trailing" constant="20" id="JNl-A1-YNc"/>
                             <constraint firstItem="WrD-7U-sEe" firstAttribute="top" secondItem="h2c-Nn-8lY" secondAttribute="bottom" constant="24" id="NE3-kt-WQ5"/>
                             <constraint firstItem="fQP-da-IvG" firstAttribute="trailing" secondItem="WrD-7U-sEe" secondAttribute="trailing" constant="20" id="Nw4-11-ogk"/>
-                            <constraint firstItem="Tif-m1-O02" firstAttribute="top" secondItem="WrD-7U-sEe" secondAttribute="bottom" constant="8" symbolic="YES" id="QVi-Pa-4Se"/>
                             <constraint firstItem="fQP-da-IvG" firstAttribute="trailing" secondItem="05L-KG-Z0f" secondAttribute="trailing" constant="20" id="R6I-h0-MK2"/>
-                            <constraint firstItem="Tif-m1-O02" firstAttribute="bottom" secondItem="fQP-da-IvG" secondAttribute="bottom" id="S5O-Tx-6m0"/>
-                            <constraint firstItem="Tif-m1-O02" firstAttribute="trailing" secondItem="fQP-da-IvG" secondAttribute="trailing" id="UHC-2P-fQc"/>
                             <constraint firstItem="05L-KG-Z0f" firstAttribute="top" secondItem="qNl-g5-BTD" secondAttribute="bottom" constant="8" symbolic="YES" id="YTD-lc-pHy"/>
                             <constraint firstItem="WrD-7U-sEe" firstAttribute="leading" secondItem="fQP-da-IvG" secondAttribute="leading" constant="20" id="bbp-xx-rxL"/>
+                            <constraint firstItem="fQP-da-IvG" firstAttribute="trailing" secondItem="Bjk-ZT-iDX" secondAttribute="trailing" id="dew-AC-1vO"/>
                             <constraint firstItem="h2c-Nn-8lY" firstAttribute="leading" secondItem="fQP-da-IvG" secondAttribute="leading" constant="20" id="ebx-fz-6cZ"/>
+                            <constraint firstItem="fQP-da-IvG" firstAttribute="bottom" secondItem="Bjk-ZT-iDX" secondAttribute="bottom" constant="10" id="fN1-h0-pyt"/>
                             <constraint firstItem="h2c-Nn-8lY" firstAttribute="top" secondItem="05L-KG-Z0f" secondAttribute="bottom" constant="8" symbolic="YES" id="lFr-CA-va8"/>
                             <constraint firstItem="fQP-da-IvG" firstAttribute="trailing" secondItem="h2c-Nn-8lY" secondAttribute="trailing" constant="20" id="oGQ-61-Od1"/>
+                            <constraint firstItem="Bjk-ZT-iDX" firstAttribute="top" secondItem="WrD-7U-sEe" secondAttribute="bottom" constant="5" id="q1h-vN-BOm"/>
                             <constraint firstItem="1Yb-gv-tTd" firstAttribute="trailing" secondItem="fQP-da-IvG" secondAttribute="trailing" id="qQ7-DI-lJe"/>
                             <constraint firstItem="qNl-g5-BTD" firstAttribute="top" secondItem="1Yb-gv-tTd" secondAttribute="bottom" constant="8" symbolic="YES" id="skV-mB-u0F"/>
                             <constraint firstItem="1Yb-gv-tTd" firstAttribute="leading" secondItem="fQP-da-IvG" secondAttribute="leading" id="ykr-F2-tjC"/>
@@ -98,7 +98,7 @@
                     <connections>
                         <outlet property="nameLabel" destination="05L-KG-Z0f" id="fbh-oA-JgE"/>
                         <outlet property="nameTextField" destination="h2c-Nn-8lY" id="gTc-Qp-Hk8"/>
-                        <outlet property="tableView" destination="Tif-m1-O02" id="APB-BK-uwC"/>
+                        <outlet property="tableView" destination="Bjk-ZT-iDX" id="kfz-OX-YkO"/>
                         <outlet property="userImageView" destination="1Yb-gv-tTd" id="vHB-qz-G6y"/>
                     </connections>
                 </viewController>
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-206" y="107"/>
+            <point key="canvasLocation" x="171" y="70"/>
         </scene>
     </scenes>
     <resources>

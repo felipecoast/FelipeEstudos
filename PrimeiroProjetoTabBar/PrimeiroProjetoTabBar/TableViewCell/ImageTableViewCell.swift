@@ -24,7 +24,7 @@ class ImageTableViewCell: UITableViewCell {
     }
     
     func setupCell(data: User) {
-        self.photoDisplayImageView.text = data.name
+        self.nameCellLabel.text = data.name
         self.photoDisplayImageView.image = data.image
     }
     
