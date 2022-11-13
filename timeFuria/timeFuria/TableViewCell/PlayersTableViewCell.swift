@@ -20,7 +20,7 @@ class PlayersTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        selectionStyle = .none
     }
     
     func setupCell(player: Player) {
