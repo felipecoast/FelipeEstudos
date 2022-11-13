@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,6 +17,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="498" height="277"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-2i-whf">
+                        <rect key="frame" x="0.0" y="0.0" width="498" height="277"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zwA-oN-fTF">
                         <rect key="frame" x="25" y="39" width="180" height="200"/>
                         <constraints>
@@ -24,8 +29,8 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZaB-6b-Gkm">
-                        <rect key="frame" x="250" y="125" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="225" y="125" width="42" height="20"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -33,16 +38,26 @@
                 <constraints>
                     <constraint firstItem="zwA-oN-fTF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="792-nE-ugL"/>
                     <constraint firstItem="zwA-oN-fTF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="28" id="EcR-jt-4rK"/>
-                    <constraint firstItem="ZaB-6b-Gkm" firstAttribute="leading" secondItem="zwA-oN-fTF" secondAttribute="trailing" constant="45" id="JQZ-u9-sUh"/>
+                    <constraint firstItem="ZaB-6b-Gkm" firstAttribute="leading" secondItem="zwA-oN-fTF" secondAttribute="trailing" constant="20" id="JQZ-u9-sUh"/>
+                    <constraint firstItem="dyc-2i-whf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="MAe-5Z-QND"/>
                     <constraint firstItem="ZaB-6b-Gkm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="125" id="W2M-Sn-k5K"/>
+                    <constraint firstAttribute="bottom" secondItem="dyc-2i-whf" secondAttribute="bottom" id="eFe-Gv-sms"/>
+                    <constraint firstItem="dyc-2i-whf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="hRF-qC-WKM"/>
+                    <constraint firstAttribute="trailing" secondItem="dyc-2i-whf" secondAttribute="trailing" id="v92-Zz-heQ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cellBackgroungView" destination="dyc-2i-whf" id="Yel-WC-TOP"/>
                 <outlet property="playerNameLabel" destination="ZaB-6b-Gkm" id="G91-S8-uDD"/>
                 <outlet property="playerUIImageView" destination="zwA-oN-fTF" id="HVa-75-uN2"/>
             </connections>
             <point key="canvasLocation" x="271" y="20"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var teamNameLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     
     let data: [Player] =    [
@@ -22,12 +21,13 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
         configTableView()
         configTextLabel()
     }
     
     func configTextLabel() {
-        teamNameLabel.text = "FURIA"
+
     }
     
     func configTableView() {
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(PlayersTableViewCell.nib(), forCellReuseIdentifier: PlayersTableViewCell.identifier)
     }
-
+    
 }
 
 extension ViewController: UITableViewDelegate {
@@ -46,7 +46,6 @@ extension ViewController: UITableViewDelegate {
         vc?.player = player
         navigationController?.pushViewController(vc ?? UIViewController(), animated: true)
     }
-    
     
 }
 
