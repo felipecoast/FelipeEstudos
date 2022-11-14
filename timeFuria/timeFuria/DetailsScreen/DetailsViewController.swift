@@ -27,4 +27,9 @@ class DetailsViewController: UIViewController {
         ageLabel.text = "Idade: \(player?.playerAge ?? "")"
         
     }
+    
+    @IBAction func tappedBackButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 }

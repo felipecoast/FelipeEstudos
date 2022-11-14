@@ -47,16 +47,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jey-Cx-vyd">
+                                <rect key="frame" x="0.0" y="47" width="84" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7pQ-X6-aem"/>
+                                    <constraint firstAttribute="width" constant="84" id="9UN-Oy-yJM"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system" title=""/>
+                                <connections>
+                                    <action selector="tappedBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XLp-Hd-dey"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jey-Cx-vyd" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="1Ol-Sx-fap"/>
                             <constraint firstItem="s9N-FN-1Na" firstAttribute="top" secondItem="nqw-e0-F7G" secondAttribute="bottom" constant="32.666666666666629" id="C0Q-iK-IAi"/>
                             <constraint firstItem="PBe-dK-Ubq" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="C9y-hK-L92"/>
                             <constraint firstItem="EhD-lM-Dd5" firstAttribute="trailing" secondItem="s9N-FN-1Na" secondAttribute="trailing" id="DRj-bU-8XR"/>
                             <constraint firstItem="EhD-lM-Dd5" firstAttribute="leading" secondItem="s9N-FN-1Na" secondAttribute="leading" id="EXs-cK-bzA"/>
                             <constraint firstItem="PBe-dK-Ubq" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Ltl-YH-Pe7"/>
                             <constraint firstItem="nqw-e0-F7G" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="75" id="TBF-Cf-RpS"/>
+                            <constraint firstItem="jey-Cx-vyd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="UI1-Kx-9GW"/>
                             <constraint firstItem="s9N-FN-1Na" firstAttribute="leading" secondItem="nqw-e0-F7G" secondAttribute="leading" id="fn2-gL-y2U"/>
                             <constraint firstItem="s9N-FN-1Na" firstAttribute="trailing" secondItem="nqw-e0-F7G" secondAttribute="trailing" id="g6S-sI-BM6"/>
                             <constraint firstItem="g2t-gg-1aP" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hvP-zb-Lge"/>
@@ -79,6 +94,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chevron.backward" catalog="system" width="97" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
