@@ -7,7 +7,7 @@
 
 import UIKit
 
-class Tela01ViewController: UIViewController {
+class Tela01ViewController: UIViewController, UINavigationControllerDelegate {
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -17,11 +17,17 @@ class Tela01ViewController: UIViewController {
     
     var imageList: [String] = []
     var list: [String] = ["car3", "car4"]
+    let imagePicker: UIImagePickerController = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
-        // Do any additional setup after loading the view.
+        nameTextField.delegate = self
+        configImagePicker()
+    }
+    
+    func configImagePicker() {
+        imagePicker.delegate = self
     }
     
     func configTableView() {
@@ -31,12 +37,35 @@ class Tela01ViewController: UIViewController {
     }
 
     @IBAction func editPhotoButton(_ sender: UIButton) {
+        imagePicker.allowsEditing = false
+//        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+//            imagePicker.sourceType = .camera
+//        } else {
+//            imagePicker.sourceType = .photoLibrary
+//        }
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true)
     }
     
     @IBAction func addButton(_ sender: UIButton) {
-        imageList.append(nameTextField.text ?? "")
-        tableView.reloadData()
-        nameTextField.text = ""
+        if textFieldIsNotEmpty() {
+            imageList.append(nameTextField.text ?? "")
+            tableView.reloadData()
+            nameTextField.text = ""
+        } else {
+            let alertController = UIAlertController(title: "Atenção!", message: "É necessário adicionar um nome.", preferredStyle: .alert)
+            let ok = UIAlertAction(title: "OK", style: .cancel)
+            alertController.addAction(ok)
+            present(alertController, animated: true)
+        }
+    }
+    
+    func textFieldIsNotEmpty() -> Bool {
+        if nameTextField.text?.isEmpty ?? true || nameTextField.text?.hasPrefix(" ") ?? true {
+            return false
+        } else {
+            return true
+        }
     }
     
 }
@@ -59,5 +88,27 @@ extension Tela01ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 219
     }
+    
+}
+
+extension Tela01ViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+}
+
+extension Tela01ViewController: UIImagePickerControllerDelegate, UINavigationBarDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            self.userImageView.image = image
+        }
+        picker.dismiss(animated: true)
+    }
+    
+    
     
 }
