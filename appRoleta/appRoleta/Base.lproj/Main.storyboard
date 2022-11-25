@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FpC-lz-UFn">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rwn-YG-JcB">
+            <objects>
+                <tabBarController id="FpC-lz-UFn" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OhM-MY-OqO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="mw5-yQ-Ea0"/>
+                        <segue destination="Ayk-7S-8Zo" kind="relationship" relationship="viewControllers" id="8Ww-m5-gLX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifn-N6-b4A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1589" y="75"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="hId-HG-v3S">
+            <objects>
+                <viewController id="Ayk-7S-8Zo" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r6P-8R-Lii">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WzU-ll-wya"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ix7-3m-RCp"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GuL-We-act" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709" y="508"/>
+        </scene>
+        <!--Roleta-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="appRoleta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card" translatesAutoresizingMaskIntoConstraints="NO" id="3Nd-y2-J4j">
+                                <rect key="frame" x="75" y="95" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7Qd-em-3SK"/>
+                                    <constraint firstAttribute="height" constant="128" id="TVh-Fe-Pea"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egC-ot-QPB">
+                                <rect key="frame" x="30" y="241" width="330" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPU-f2-ERM">
+                                <rect key="frame" x="30" y="310" width="330" height="35"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tappedRollButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tLq-I5-Njl"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aYX-hO-280">
+                                <rect key="frame" x="0.0" y="392" width="390" height="309"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="qPU-f2-ERM" firstAttribute="leading" secondItem="egC-ot-QPB" secondAttribute="leading" id="5Kj-QD-rtS"/>
+                            <constraint firstItem="3Nd-y2-J4j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="KHP-Dz-nrC"/>
+                            <constraint firstItem="qPU-f2-ERM" firstAttribute="top" secondItem="egC-ot-QPB" secondAttribute="bottom" constant="35" id="L8m-1o-R6k"/>
+                            <constraint firstItem="3Nd-y2-J4j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SDl-pz-SH8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aYX-hO-280" secondAttribute="trailing" id="d86-j8-mtE"/>
+                            <constraint firstItem="egC-ot-QPB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hsw-JM-CC0"/>
+                            <constraint firstItem="aYX-hO-280" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kgh-Jo-cI1"/>
+                            <constraint firstItem="egC-ot-QPB" firstAttribute="top" secondItem="3Nd-y2-J4j" secondAttribute="bottom" constant="18" id="lRO-xd-jhE"/>
+                            <constraint firstItem="aYX-hO-280" firstAttribute="top" secondItem="qPU-f2-ERM" secondAttribute="bottom" constant="47" id="oHX-xf-ekY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aYX-hO-280" secondAttribute="bottom" constant="60" id="qak-FB-SLd"/>
+                            <constraint firstItem="qPU-f2-ERM" firstAttribute="trailing" secondItem="egC-ot-QPB" secondAttribute="trailing" id="set-rM-SCy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egC-ot-QPB" secondAttribute="trailing" constant="30" id="zqn-qe-IpN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Roleta" id="Tgv-cW-LgM"/>
+                    <connections>
+                        <outlet property="mainImageView" destination="3Nd-y2-J4j" id="1Yl-kd-sYs"/>
+                        <outlet property="nameTextField" destination="egC-ot-QPB" id="bn8-Uh-xaf"/>
+                        <outlet property="participantsTableView" destination="aYX-hO-280" id="elU-Qk-DQo"/>
+                        <outlet property="rollButton" destination="qPU-f2-ERM" id="iFN-Ze-tUz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-709" y="-132"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card" width="170.66667175292969" height="170.66667175292969"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
