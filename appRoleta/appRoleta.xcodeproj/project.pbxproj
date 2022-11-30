@@ -19,6 +19,7 @@
 		200148252930484F00B927EC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200148242930484F00B927EC /* TabBarViewController.swift */; };
 		200148292930535200B927EC /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200148272930535200B927EC /* PersonTableViewCell.swift */; };
 		2001482A2930535200B927EC /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 200148282930535200B927EC /* PersonTableViewCell.xib */; };
+		203F1FF82936D89D00A51A93 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203F1FF72936D89D00A51A93 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		200148242930484F00B927EC /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		200148272930535200B927EC /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
 		200148282930535200B927EC /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
+		203F1FF72936D89D00A51A93 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		20014806293039A200B927EC /* appRoleta */ = {
 			isa = PBXGroup;
 			children = (
+				203F1FF62936D88200A51A93 /* Alert */,
 				200148262930533300B927EC /* Person */,
 				200148232930480E00B927EC /* TabBar */,
 				200148202930410000B927EC /* Model */,
@@ -115,6 +118,14 @@
 				200148282930535200B927EC /* PersonTableViewCell.xib */,
 			);
 			path = Person;
+			sourceTree = "<group>";
+		};
+		203F1FF62936D88200A51A93 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				203F1FF72936D89D00A51A93 /* AlertController.swift */,
+			);
+			path = Alert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 				2001481E29303CF600B927EC /* EmptyTableViewCell.swift in Sources */,
 				20014808293039A200B927EC /* AppDelegate.swift in Sources */,
 				200148222930411B00B927EC /* User.swift in Sources */,
+				203F1FF82936D89D00A51A93 /* AlertController.swift in Sources */,
 				200148252930484F00B927EC /* TabBarViewController.swift in Sources */,
 				200148292930535200B927EC /* PersonTableViewCell.swift in Sources */,
 				2001480A293039A200B927EC /* SceneDelegate.swift in Sources */,
